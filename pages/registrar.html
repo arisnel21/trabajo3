@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Arpri Logística</title>
+    <link rel="stylesheet" href="/css/registrar.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img class="header__img" src="/images/A.png" alt="Logo de Arpri Logística">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#home">Inicio</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#about">Sobre Nosotros</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#services">Servicios</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__button header__button--login" onclick="window.location.href='login.html'">Login</button>
+                <button class="header__button header__button--register" onclick="window.location.href='register.html'">Registrar</button>
+            </div>
+        </div>
+    </header>
+    <!-- fin header -->
+
+    <!-- Página de Registro -->
+    <main class="register">
+        <section class="register__container">
+            <h1 class="register__title">Crear Cuenta</h1>
+            <form action="/register" method="POST" class="register__form">
+                <div class="register__form-group">
+                    <label for="name" class="register__label">Nombre Completo</label>
+                    <input type="text" id="name" name="name" class="register__input" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="register__form-group">
+                    <label for="email" class="register__label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="register__input" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="register__form-group">
+                    <label for="password" class="register__label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="register__input" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="register__button">Registrarse</button>
+            </form>
+            <p class="register__login">¿Ya tienes una cuenta? <a href="login.html" class="register__link">Inicia sesión aquí</a></p>
+        </section>
+    </main>
+</body>
+</html>
