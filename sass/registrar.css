@@ -40,7 +40,7 @@ body {
   transition: color 0.3s;
 }
 .header__nav-link:hover {
-  color: rgb(187.5751295337, 231.4248704663, 204.0777202073);
+  color: #bce7cc;
 }
 .header__buttons {
   flex: 1;
@@ -57,7 +57,7 @@ body {
   transition: background-color 0.3s;
 }
 .header__button:hover {
-  background-color: rgb(76.5, 76.5, 76.5);
+  background-color: #4d4d4d;
 }
 
 .register {
@@ -125,7 +125,7 @@ body {
   margin: 35px auto 0;
 }
 .register__button:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: #1a1a1a;
   color: #f9f9f9;
 }
 
@@ -156,6 +156,4 @@ body {
     font-size: 14px;
     padding: 0.5rem;
   }
-}
-
-/*# sourceMappingURL=registrar.css.map */
+}/*# sourceMappingURL=registrar.css.map */

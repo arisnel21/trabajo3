@@ -1,0 +1,216 @@
+// Variables
+$primary-color: #000; // Color primario
+$secondary-color: #fff;   // Color de fondo
+$font-family: 'Arial', sans-serif;
+$color: cyan;
+$color-buton: #a28b86;
+$color-login:#d9e3dd;
+
+// Estilos globales
+body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Estilos del header
+.header {
+    background-color: $primary-color;
+    padding: 0 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__logo {
+        &__img {
+            width: 80px; // Ajusta el tamaño según sea necesario
+            height: auto;
+        }
+    }
+
+    &__nav {
+        &-list {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem; // Espaciado entre elementos
+        }
+
+        &-link {
+            color: $secondary-color;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: lighten($color, 20%);
+            }
+        }
+    }
+
+    &__buttons {
+        .header__button {
+            background-color: $secondary-color;
+            color: $primary-color;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &--register {
+                &:hover {
+                    background-color: lighten($color-buton, 20%);
+                }
+            }
+        }
+    }
+}
+
+// Estilos del formulario de login
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Centrar verticalmente
+
+    &__container {
+        background-color: $color-login;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 4rem;
+        width: 300px; // Ancho del contenedor
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: $primary-color;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &-group {
+            margin-bottom: 1rem;
+
+            .login__label {
+                display: block;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+
+            .login__input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                }
+            }
+        }
+
+        &__button {
+            background-color: $primary-color;
+            color: $secondary-color;
+            border: none;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: lighten($primary-color, 10%);
+            }
+        }
+    }
+
+    &__register {
+        text-align: center;
+        margin-top: 1rem;
+
+        .login__link {
+            color: $primary-color;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Media Queries para Responsividad
+
+@media (max-width: 768px) {
+    .header {
+        &__container {
+            flex-direction: column; // Cambiar a columna en pantallas más pequeñas
+            align-items: flex-start; // Alinear a la izquierda
+        }
+
+        &__nav {
+            &-list {
+                flex-direction: column; // Cambiar a columna en pantallas más pequeñas
+                gap: 1rem; // Espaciado reducido entre elementos
+            }
+        }
+
+        &__buttons {
+            margin-top: 1rem; // Espacio arriba de los botones
+        }
+    }
+
+    .login {
+        &__container {
+            width: 90%; // Ancho más amplio en pantallas pequeñas
+            padding: 1.5rem; // Menos padding
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        &__nav {
+            &-list {
+                gap: 0.5rem; // Espaciado aún más pequeño en pantallas muy pequeñas
+            }
+        }
+    }
+
+    .login {
+        &__container {
+            padding: 1rem; // Menos padding en pantallas pequeñas
+        }
+
+        &__title {
+            font-size: 1.5rem; // Tamaño de fuente más pequeño
+        }
+
+        &__form {
+            &-group {
+                .login__label {
+                    font-size: 0.9rem; // Tamaño de fuente más pequeño para las etiquetas
+                }
+
+                .login__input {
+                    font-size: 1rem; // Tamaño de fuente más pequeño para los inputs
+                }
+            }
+        }
+
+        &__register {
+            .login__link {
+                font-size: 0.9rem; // Tamaño de fuente más pequeño para el enlace de registro
+            }
+        }
+    }
+}
