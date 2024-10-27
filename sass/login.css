@@ -43,7 +43,7 @@ body {
   transition: background-color 0.3s;
 }
 .header__buttons .header__button--register:hover {
-  background-color: rgb(206.3271028037, 194.2897196262, 191.6728971963);
+  background-color: #cec2c0;
 }
 
 .login {
@@ -96,7 +96,7 @@ body {
   border-radius: 4px;
 }
 .login__form__button:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: #1a1a1a;
 }
 .login__register {
   text-align: center;
@@ -146,6 +146,4 @@ body {
   .login__register .login__link {
     font-size: 0.9rem;
   }
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */
