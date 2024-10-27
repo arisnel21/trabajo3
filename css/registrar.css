@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
+
 .header__container {
   display: flex;
   align-items: center;
@@ -20,33 +21,40 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+
 .header__logo {
   flex: 1;
 }
+
 .header__logo img {
   width: 80px;
   height: 80px;
 }
+
 .header__nav-list {
   list-style: none;
   display: flex;
   justify-content: space-around;
   gap: 1.5rem;
 }
+
 .header__nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
+
 .header__nav-link:hover {
-  color: rgb(187.5751295337, 231.4248704663, 204.0777202073);
+  color: #bce7cc;
 }
+
 .header__buttons {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
+
 .header__button {
   background-color: white;
   color: #000;
@@ -56,8 +64,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .header__button:hover {
-  background-color: rgb(76.5, 76.5, 76.5);
+  background-color: #4d4d4d;
 }
 
 .register {
@@ -67,6 +76,7 @@ body {
   height: calc(100vh - 100px);
   padding: 20px;
 }
+
 .register__container {
   background-color: #d9e3dd;
   border-radius: 8px;
@@ -79,40 +89,49 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
+
 .register__title {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .register__form-group {
   display: flex;
   flex-direction: column;
 }
+
 .register__label {
   margin: 8px;
   font-weight: bold;
 }
+
 .register__input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
+
 .register__input:focus {
   border-color: #000;
   outline: none;
 }
+
 .register__login {
   text-align: center;
 }
+
 .register__login__link {
   color: #000;
   text-decoration: none;
   font-weight: bold;
 }
+
 .register__login__link:hover {
   text-decoration: underline;
 }
+
 .register__button {
   background-color: #f9f9f9;
   color: #000;
@@ -124,8 +143,9 @@ body {
   transition: background-color 0.3s;
   margin: 35px auto 0;
 }
+
 .register__button:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: #1a1a1a;
   color: #f9f9f9;
 }
 
@@ -156,6 +176,6 @@ body {
     font-size: 14px;
     padding: 0.5rem;
   }
-}
+} 
 
 /*# sourceMappingURL=registrar.css.map */

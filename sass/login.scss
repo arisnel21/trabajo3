@@ -30,7 +30,7 @@ body {
 
     &__logo {
         &__img {
-            width: 80px; // Ajusta el tamaño según sea necesario
+            width: 80px; 
             height: auto;
         }
     }
@@ -61,6 +61,8 @@ body {
             padding: 0.5rem 1rem;
             cursor: pointer;
             transition: background-color 0.3s;
+            
+            
 
             &--register {
                 &:hover {
@@ -126,6 +128,7 @@ body {
             cursor: pointer;
             transition: background-color 0.3s;
             border-radius: 4px;
+            
 
             &:hover {
                 background-color: lighten($primary-color, 10%);
