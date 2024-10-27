@@ -14,7 +14,6 @@ body {
   background-color: #000;
   padding: 1rem;
 }
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -22,37 +21,29 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .header__logo img {
   height: 80px;
 }
-
 .header__nav {
   display: flex;
 }
-
 .header__nav-list {
   display: flex;
   list-style: none;
 }
-
 .header__nav-item {
   margin: 0 1rem;
 }
-
 .header__nav-link {
   color: #fff;
   text-decoration: none;
 }
-
 .header__nav-link:hover {
   color: #F5A623;
 }
-
 .header__buttons {
   display: flex;
 }
-
 .header__buttons .header__button {
   padding: 0.5rem 1rem;
   margin-left: 1rem;
@@ -61,17 +52,15 @@ body {
   cursor: pointer;
   color: #fff;
   font-weight: bold;
-  background-color: #2275d7;
+  background-color: rgb(34.3857142857, 117.3857142857, 214.6142857143);
+  text-decoration: none;
 }
-
 .header__buttons .header__button--login {
   background-color: #F5A623;
 }
-
 .header__buttons .header__button--register {
-  background-color: #76abe9;
+  background-color: rgb(117.9571428571, 170.9571428571, 233.0428571429);
 }
-
 .header__buttons .header__button:hover {
   opacity: 0.8;
 }
@@ -87,29 +76,24 @@ body {
   gap: 2rem;
   padding: 2rem;
 }
-
 .main__section--1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .main__section--1 .main__title {
   color: #F5A623;
   font-size: 1.2rem;
 }
-
 .main__section--1 .main__heading {
   color: #4A90E2;
   font-size: 2rem;
   margin-top: 0.5rem;
 }
-
 .main__section--1 .main__description {
   margin-top: 1rem;
   line-height: 1.5;
 }
-
 .main__section--2 .main__section-img {
   width: 100%;
   height: auto;
@@ -121,7 +105,6 @@ body {
   color: #fff;
   padding: 2rem 0;
 }
-
 .footer__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -129,40 +112,33 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .footer__section--company-info .footer__title {
   font-size: 1.5rem;
   color: #F5A623;
 }
-
 .footer__section--links .footer__subtitle, .footer__section--social-media .footer__subtitle {
   color: #F5A623;
 }
-
 .footer__section--links .footer__list, .footer__section--social-media .footer__list {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
 }
-
 .footer__section--links .footer__list .footer__list-item, .footer__section--social-media .footer__list .footer__list-item {
   margin: 0.5rem 0;
 }
-
 .footer__section--links .footer__list .footer__list-item .footer__link, .footer__section--social-media .footer__list .footer__list-item .footer__link {
   color: #fff;
   text-decoration: none;
 }
-
 .footer__section--links .footer__list .footer__list-item .footer__link:hover, .footer__section--social-media .footer__list .footer__list-item .footer__link:hover {
   color: #F5A623;
 }
-
 .footer__bottom {
   text-align: center;
   padding-top: 1rem;
   font-size: 0.9rem;
-  color: gray;
+  color: rgb(127.5, 127.5, 127.5);
 }
 
 @media (max-width: 768px) {
@@ -190,6 +166,6 @@ body {
   .footer__container {
     grid-template-columns: 1fr;
   }
-} 
+}
 
 /*# sourceMappingURL=estilos.css.map */

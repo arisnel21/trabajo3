@@ -53,6 +53,7 @@ body {
   color: #fff;
   font-weight: bold;
   background-color: #2275d7;
+  text-decoration: none;
 }
 .header__buttons .header__button--login {
   background-color: #F5A623;
